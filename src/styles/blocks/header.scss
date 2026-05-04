@@ -23,6 +23,7 @@
   .nav {
     display: flex;
     align-items: stretch;
+    transition-duration: $hoverTransitionDuration;
 
     // #region NavList
     &__list {
