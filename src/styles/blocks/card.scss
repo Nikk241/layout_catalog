@@ -1,5 +1,8 @@
 .card {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
   width: $carfWidth;
   height: $cardHeight;
   transition-duration: $hoverTransitionDuration;
@@ -7,7 +10,6 @@
   // background-color: grey;
   border: 1px solid rgba(243, 243, 243, 1);
   border-radius: 5px;
-
   &__image {
     display: block;
     width: 160px;
@@ -16,7 +18,7 @@
     margin-top: 32px;
   }
 
-  .buy {
+  &__buy {
     text-align: center;
     align-content: center;
     text-decoration: none;
@@ -28,7 +30,7 @@
     background-color: $cardBlueColor;
     border: 1px solid $cardBlueColor;
     color: $cardMainColor;
-    margin: 16px 0;
+    margin: 0 16px 16px;
     font-size: 14px;
     transition-duration: $hoverTransitionDuration;
     &:hover {
@@ -43,7 +45,6 @@
   margin: 40px 16px 16px;
   display: flex;
   flex-direction: column;
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   color: $cardContentTextColor;
 
